@@ -1,0 +1,180 @@
+
+
+/* =========== header ============ */
+
+/* ----header---- */
+
+.section-header {
+    padding-top: 10px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: end;
+    /* align-items: center; */
+    /* position: relative;
+			float: right; */
+}
+
+/* ========== navbar ========== */
+
+/* --- navbar --- */
+
+.navbar {
+    padding-top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    width: 280px;
+}
+
+.bg-danger {
+    background-color: rgba(121, 3, 29, 0.6) !important;
+    border-color: rgba(121, 3, 29);
+}
+
+.navbar .bg-danger:hover,
+.navbar .bg-danger:focus {
+    background-color: rgb(121, 3, 29) !important;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {
+        background: rgba(121, 3, 29);
+        color: #fff;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item:hover .dropdown-item {
+        color: #fff;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .navbar .nav-item:hover .dropdown-item:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: rgba(0, 4, 7);
+    }
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* .show */
+
+.show .dropdown-menu {
+    margin-top: 0;
+    border-radius: 0;
+}
+
+.show .nav-link:hover {
+    background: rgba(121, 3, 29);
+    color: #fff;
+}
+
+.show .dropdown-item {
+    color: #fff;
+}
+
+.show .dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 4, 7);
+}
+
+.wow_custom {
+    background: rgba(121, 3, 29, 0.6);
+    border-radius: 2px;
+}
+
+.dropdown-menu {
+    background: rgba(0, 4, 7, 0.6);
+    color: #fff;
+}
+
+.middle{
+    border-radius: 10%;
+    background: rgba(82, 78, 75, 0.5);
+    position: relative;
+    top: 61%;
+    left: 50%;
+    height: 65%;
+    width: 40%;
+    margin: -250px 0px 0px -300px;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+  
+}
+
+#rouHead{
+
+    
+    font-weight: bold;
+    text-align: center;
+
+
+
+
+}
+.rouBody{
+  
+  
+
+
+}
+
+select {
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  select.minimal {
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.minimal:focus {
+    background-image:
+      linear-gradient(45deg, green 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, green 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+  }
+  
+  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
