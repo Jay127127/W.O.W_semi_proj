@@ -7,6 +7,12 @@
     <title>Page1</title>
     <link rel="stylesheet" href="../css/page1.css">
     
+	<!-- Bootstap Fluid Container -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -24,7 +30,9 @@
             height: 100vh;
             background-position: center;
             background-size: cover;
+			background-attachment: fixed;
         }
+
     </style>
 </head>
 
@@ -50,9 +58,12 @@
 			</a>
 		</div>
 
+
 		<button class="navbar-toggler bg-danger navbar-dark " type="button" data-toggle="collapse" data-target="#navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 		</button>
+
+
 		<div class="collapse navbar-collapse" id="navbarNav1">
 			<ul class="wow_custom navbar-nav ml-auto">
 				<li class="nav-item dropdown">
@@ -96,27 +107,180 @@
 <!-- navbar end -->
 
 <!-- 본문 내용 시작 -->
-<div class="boardlist">
-    <div class="boardSelect">
-        <select name="boardSelect" id="boardSelect">
-            <option value="">최신순</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-        </select>
-    </div>
-</div>
+<main>
+	<div>
+		<div class="sub_title">
+			<ul class="sub_info">
+				<li>자유게시판</li>
+				<li>w.o.w의 회원들과 자유로운 이야기를 나눠보세요.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div>
+		<div class="board_select">
+			<select id="select" name="select">
+				<option value="bs_recent" selected >최신순</option>
+				<option value="bs_view">조회수순</option>
+				<option value="bs_like">좋아요순</option>
+				<option value="bs_writer">작성자순?..?</option>
+			</select>
+		</div>
+	</div>
 
 
+	<div class="">
+	</div>
 
+
+	<div id="table_board">
+		<table class="table table-hover" style="text-align: center;">
+			<thead style="color: black;">
+				<tr>
+					<th scope="col" style="width: 8%;">No.</th>
+					<th scope="col">Title</th>
+					<th scope="col" style="width: 15%;">Writer</th>
+					<th scope="col" style="width: 15%;">Date</th>
+					<th scope="col" style="width: 8%;">View</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="table-light" class="attention">
+					<th scope="row"></th>
+					<td onclick="#">[전체] 공지사항 입니다.</td>
+					<td onclick="#">문인수</td>
+					<td onclick="#">2021.12.01</td>
+					<td onclick="#">2352</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">10</th>
+					<td onclick="#">2022년에는 진짜 살뺀다..ㅠㅠ</td>
+					<td onclick="#">아가리어터</td>
+					<td onclick="#">2021.12.31</td>
+					<td onclick="#">52</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">9</th>
+					<td onclick="#">안녕하십니까, 반갑습니다.</td>
+					<td onclick="#">김사랑</td>
+					<td onclick="#">2021.12.22</td>
+					<td onclick="#">63</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">8</th>
+					<td onclick="#">상체 조지기 루틴 공유</td>
+					<td onclick="#">지은이</td>
+					<td onclick="#">2021.12.22</td>
+					<td onclick="#">345</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">7</th>
+					<td onclick="#">허벅지 키우는 빠른 방법(꿀팁)</td>
+					<td onclick="#">후니후니</td>
+					<td onclick="#">2012.12.21</td>
+					<td onclick="#">127</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">6</th>
+					<td onclick="#">모닝 스트레칭 기록 (D+10)</td>
+					<td onclick="#">승여니</td>
+					<td onclick="#">2021.12.20</td>
+					<td onclick="#">123</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">5</th>
+					<td onclick="#">부산에서 서울까지 국토대장정</td>
+					<td onclick="#">노노지훈</td>
+					<td onclick="#">2021.12.20</td>
+					<td onclick="#">32</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">4</th>
+					<td onclick="#">줄넘기 하고 스트레칭을 꼭 합시다.</td>
+					<td onclick="#">상민이</td>
+					<td onclick="#">2021.12.19</td>
+					<td onclick="#">23</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">3</th>
+					<td onclick="#">박박이가 왔다</td>
+					<td onclick="#">박박이</td>
+					<td onclick="#">2021.12.18</td>
+					<td onclick="#">534</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">2</th>
+					<td onclick="#">바디프로필 후기 (+스튜디오 추천)</td>
+					<td onclick="#">은경</td>
+					<td onclick="#">2021.12.17</td>
+					<td onclick="#">232</td>
+				</tr>
+				<tr class="table-light">
+					<th scope="row">1</th>
+					<td onclick="#">운동 유튜버 추천해주세요 ㅠㅠ</td>
+					<td onclick="#">미리미리</td>
+					<td onclick="#">2021.12.14</td>
+					<td onclick="#">100</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="new_roll_space">
+		<a href="#" class="new_roll">글 쓰기</a>
+	</div>
+
+	<div class="board_number">
+		<a class="board_number_prev">&laquo;</a>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">&raquo;</a>
+	</div>
+
+	<!-- <div>
+		<div class="pagination_space">
+			<ul class="pagination">
+				<li class="page-item disabled">
+					<a class="page-link" href="#">&laquo;</a>
+				</li>
+				<li class="page-item active">
+					<a class="page-link" href="#">1</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">2</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">3</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">4</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">5</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">&raquo;</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+
+</main>
 <!-- 본문 내용 끝 -->
 
 
+<!-- 푸터 작업? -->
+<footer>
+	<div class="nothing" style="height: 150px;">
 
-<div>
-
-</div>
-
+	</div>
+</footer>
 
 </body>
 </html>
+
+
+
