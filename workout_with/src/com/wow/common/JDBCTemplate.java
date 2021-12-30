@@ -12,8 +12,8 @@ public class JDBCTemplate {
 	public static Connection getConnection() {
 		String url = "jdbc:oracle:thin:@127.0.0.1:1521/xe";
 //		String url = "jdbc:oracle:thin:@128.168.25.30:1521/xe";
-		String id = "kh";
-		String pwd = "kh";
+		String id = "wow";
+		String pwd = "wow";
 		
 		Connection conn = null;
 		

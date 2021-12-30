@@ -1,4 +1,4 @@
-package com.wow.admin;
+package com.wow.admin.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/deal_112")
-public class Deal112 extends HttpServlet {
+@WebServlet("/admin_info")
+public class AdminInfo extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		request.getRequestDispatcher("WEB-INF/views/admin/deal_112.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/views/admin/admin_info.jsp").forward(request, response);
 	}
 
 
