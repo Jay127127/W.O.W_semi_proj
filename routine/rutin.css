@@ -107,74 +107,14 @@
     left: 50%;
     height: 65%;
     width: 40%;
-    margin: -250px 0px 0px -300px;
+    margin: auto;
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
-  
-}
-
-#rouHead{
-
     
-    font-weight: bold;
-    text-align: center;
-
-
-
-
-}
-.rouBody{
   
-  
-
-
 }
 
-select {
-    margin: 0;      
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  select.minimal {
-    background-image:
-      linear-gradient(45deg, transparent 50%, gray 50%),
-      linear-gradient(135deg, gray 50%, transparent 50%),
-      linear-gradient(to right, #ccc, #ccc);
-    background-position:
-      calc(100% - 20px) calc(1em + 2px),
-      calc(100% - 15px) calc(1em + 2px),
-      calc(100% - 2.5em) 0.5em;
-    background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
-    background-repeat: no-repeat;
-  }
-  
-  select.minimal:focus {
-    background-image:
-      linear-gradient(45deg, green 50%, transparent 50%),
-      linear-gradient(135deg, transparent 50%, green 50%),
-      linear-gradient(to right, #ccc, #ccc);
-    background-position:
-      calc(100% - 15px) 1em,
-      calc(100% - 20px) 1em,
-      calc(100% - 2.5em) 0.5em;
-    background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
-    background-repeat: no-repeat;
-    border-color: green;
-    outline: 0;
-  }
-  
-  select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-  }
+
+
